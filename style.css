@@ -17,8 +17,8 @@
 /* Typography */
 
 /* Get your own import URL from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&display=swap');
 
 .delius-regular {
   font-family: "Delius", serif;
@@ -29,9 +29,32 @@ html {
   font-family: "Delius";
 }
 
+.iacs {
+  color: rgb(251,235,175);
+}
+h1 {
+  color: rgb(251,235,175);
+  line-height: 0.8em;
+  font-size:75px;
+  margin-top:40px;
+  text-shadow: 
+    8px 8px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+}
 h2 {
   margin-top: -20px;
   font-family: "Delius";
+   text-shadow: 
+    8px 8px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
 }
 h2::after {
   content: "";
@@ -42,24 +65,37 @@ h2::after {
   border-radius: 50px;
   background-size: cover;
   background-position: center;
-  font-size: 50px;
+  font-size: 40px;
+  justify-content: space-between;
+   text-shadow: 
+    2px 2px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
 }
 h2::after {
-  margin-top: 50px;
+  padding:5px;
   content: "Scroll To Start!";
   text-align: center;
-  border-top: 4px solid white;
+  color: #a86090;
+  border-top: 4px solid #4e617c;
   border-bottom: 4px solid red;
-  line-height: 0.6;
+  line-height: 0.9;
   box-shadow: 6px 5px 4px 4px black;
+  margin-top:30px;
+  backdrop-filter: blur(10px);
+}
+h2, h1, .banner{
+  margin-bottom: 3em;
 }
 header {
   font-size: 60px;
   text-align: center;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1024px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg);
+  object-fit:contain;
+  background-image: url(ThreeCabinsAllInALine.jpg);
   background-size: cover;
   height: 100vh;
-  animation: bg-scroll 90s infinite;
+  animation: bg-scroll 120s infinite;
   transform: translateY(0%);
 }
 
