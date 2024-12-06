@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  Aidan Negga
+* Design name:  A CSS Christmas
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -139,4 +139,45 @@ h6 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
+}
+
+.summary {
+  text-align:center;
+}
+
+.summary::after {
+  content: "Open your Presents!";
+  font-family: "Delius";
+  margin: auto;
+  border-radius: 50px;
+ top:1500px;
+  font-size: 40px;
+  position:absolute;
+}
+
+.explanation, .preamble, .participation {
+  margin-top:15px;
+  font-size:15px;
+  width:30%;
+  display:flex;
+  display:inline-block;
+  justify-content:space-evenly;
+  flex-direction:row;
+  border: 1px solid black;
+  padding:10px;
+  position:relative;
+  background-image: background: hsla(256, 25%, 29%, 1);
+
+background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
+}
+
+.preamble {
+  background-image: url(wrappingPaper1.jpeg);
+  background-size:cover;
 }
