@@ -82,16 +82,16 @@ h2::after {
   border-bottom: 4px solid red;
   line-height: 0.9;
   box-shadow: 6px 5px 4px 4px black;
-  margin-top:50px;
+  margin-top:5rem;
   backdrop-filter: blur(10px);
 }
 h2, h1, .banner{
   margin-bottom: 3em;
 }
 header {
-  font-size: 60px;
+  font-size: 45px;
   text-align: center;
-  object-fit:contain;
+  object-fit:cover;
   background-image: url(ThreeCabinsAllInALine.jpg);
   background-size: cover;
   height: 100vh;
@@ -150,7 +150,7 @@ h6 {
   font-family: "Delius";
   margin: auto;
   border-radius: 50px;
- top:1500px;
+  top:1300px;
   font-size: 40px;
   position:absolute;
 }
@@ -177,10 +177,15 @@ background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320,
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
 }
 
+.preamble:hover   {
+  animation: flip-horizontal-bottom 2s forwards;
+   
+}
 .preamble {
-  background-image: url(wrappingPaper1.jpeg);
+background-image: url(wrappingPaper1.jpeg);
   background-size:cover;
-  animation: flip-horizontal-bottom 2s;
+  color: transparent;
+ display: inline-block;
 }
 
 /* ----------------------------------------------
@@ -199,22 +204,18 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", en
   0% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
+            text-transform: none;
+  }
+  50% {
+    color:black;
+    text-transform: none;
   }
   100% {
     -webkit-transform: rotateX(-180deg);
             transform: rotateX(-180deg);
             background-image:none;
+            color:black;
+            text-transform: rotateX(-180deg);
+        
   }
 }
-@keyframes flip-horizontal-bottom {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-180deg);
-            transform: rotateX(-180deg);
-            background-image:none;
-  }
-}
-
