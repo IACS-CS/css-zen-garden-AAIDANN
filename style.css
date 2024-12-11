@@ -101,6 +101,7 @@ header {
 
 @keyframes bg-scroll {
   0% {
+    
     background-position: 0px;
     transform: translateY(0%);
   }
@@ -145,6 +146,7 @@ h6 {
   text-align:center;
 }
 
+
 .summary::after {
   content: "Open your Presents!";
   font-family: "Delius";
@@ -153,6 +155,7 @@ h6 {
   top:1300px;
   font-size: 40px;
   position:absolute;
+  
 }
 
 .explanation, .preamble, .participation {
@@ -166,26 +169,26 @@ h6 {
   border: 1px solid black;
   padding:10px;
   position:relative;
-  background-image: background: hsla(256, 25%, 29%, 1);
-
-background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
-
-background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
-
-background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
+  color: transparent;
 }
 
-.preamble:hover   {
+.explanation:hover, .preamble:hover, .participation:hover  {
   animation: flip-horizontal-bottom 2s forwards;
-   
 }
+
 .preamble {
 background-image: url(wrappingPaper1.jpeg);
   background-size:cover;
-  color: transparent;
- display: inline-block;
+  animation: bg-scroll 120s infinite;
+  transform: translateY(0%);
+}
+
+.explanation, .participation {
+  background-image:url(Griffin.png);
+  background-size:cover;
+  background-position-x: -100px;
+  animation: bg-scroll 120s infinite;
+  transform: translateY(0%);
 }
 
 /* ----------------------------------------------
@@ -204,18 +207,24 @@ background-image: url(wrappingPaper1.jpeg);
   0% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
-            text-transform: none;
-  }
-  50% {
-    color:black;
-    text-transform: none;
+            
+  
   }
   100% {
-    -webkit-transform: rotateX(-180deg);
-            transform: rotateX(-180deg);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
             background-image:none;
             color:black;
-            text-transform: rotateX(-180deg);
+            background-image: background: hsla(256, 25%, 29%, 1);
+
+background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
+            
         
   }
 }
