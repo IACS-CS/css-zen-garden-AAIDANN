@@ -144,6 +144,7 @@ h6 {
 
 .summary {
   text-align:center;
+  font-family: "Delius";
 }
 
 
@@ -170,6 +171,7 @@ h6 {
   padding:10px;
   position:relative;
   color: transparent;
+  font-family: "Delius";
 }
 
 .requirements:hover, .explanation:hover, .preamble:hover, .participation:hover  {
@@ -181,6 +183,7 @@ background-image: url(wrappingPaper1.jpeg);
   background-size:cover;
   animation: bg-scroll 120s infinite;
   transform: translateY(0%);
+  font-family: "Delius";
 }
 
 .explanation, .participation {
@@ -189,6 +192,7 @@ background-image: url(wrappingPaper1.jpeg);
 
 .responsive {
   color:transparent;
+  font-family: "Delius";
 }
 
 .requirements:hover {
@@ -207,6 +211,7 @@ background-image: url(wrappingPaper1.jpeg);
   border: 2px solid black;
   padding:20px;
   width:90%;
+  font-family: "Delius";
   background-image: background: hsla(256, 25%, 29%, 1);
 
 background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
