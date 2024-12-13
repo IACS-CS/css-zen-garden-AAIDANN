@@ -25,10 +25,9 @@
   font-weight: 400;
   font-style: normal;
 }
-html {
+body {
   font-family: "Delius";
 }
-
 .iacs {
   color: rgb(251,235,175);
 }
@@ -43,10 +42,7 @@ h1 {
     2px -2px 2px rgb(58,28,28), 
     -2px -2px 2px rgb(58,28,28);
 }
-.banner {
-  display: flex;
-  flex-direction: column;
-}
+
 h2 {
   margin-top: -20px;
   font-family: "Delius";
@@ -115,7 +111,7 @@ header {
 }
 .page-wrapper {
   /* Main font */
-  font-family: Poppins, sans-serif;
+  font-family: "Delius";
 }
 h1,
 h2,
@@ -129,15 +125,22 @@ h6 {
 
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+  background: hsla(64, 100%, 97%, 1);
+
+background: linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFFEF", endColorstr="#A86090", GradientType=1 );
 }
 /* Page wrapper */
 .page-wrapper {
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
+  background: hsla(64, 100%, 97%, 1);
+
   padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
 }
@@ -212,15 +215,17 @@ background-image: url(wrappingPaper1.jpeg);
   padding:20px;
   width:90%;
   font-family: "Delius";
-  background-image: background: hsla(256, 25%, 29%, 1);
+}
+.sidebar {
+  background: hsla(64, 100%, 97%, 1);
 
-background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
 
-background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: -moz-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
 
-background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: -webkit-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFFEF", endColorstr="#A86090", GradientType=1 );
 }
 
 /* ----------------------------------------------
