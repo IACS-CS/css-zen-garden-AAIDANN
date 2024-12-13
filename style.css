@@ -158,7 +158,7 @@ h6 {
   
 }
 
-.explanation, .preamble, .participation {
+.explanation, .preamble, .participation, .requirements {
   margin-top:15px;
   font-size:15px;
   width:30%;
@@ -172,11 +172,11 @@ h6 {
   color: transparent;
 }
 
-.explanation:hover, .preamble:hover, .participation:hover  {
+.requirements:hover, .explanation:hover, .preamble:hover, .participation:hover  {
   animation: flip-horizontal-bottom 2s forwards;
 }
 
-.preamble {
+.preamble, .requirements, .explanation, .participation {
 background-image: url(wrappingPaper1.jpeg);
   background-size:cover;
   animation: bg-scroll 120s infinite;
@@ -185,10 +185,37 @@ background-image: url(wrappingPaper1.jpeg);
 
 .explanation, .participation {
   background-image:url(Griffin.png);
-  background-size:cover;
-  background-position-x: -100px;
-  animation: bg-scroll 120s infinite;
-  transform: translateY(0%);
+}
+
+.responsive {
+  color:transparent;
+}
+
+.requirements:hover {
+    .responsive {
+       animation: flip-horizontal-bottom 2s forwards;
+}
+ }
+
+.select, .archives, .resources, .sidebar{
+  margin-top:15px;
+  display:flex;
+  display:inline-block;
+  justify-content:space-evenly;
+  flex-direction:row;
+  text-align: center;
+  border: 2px solid black;
+  padding:20px;
+  width:90%;
+  background-image: background: hsla(256, 25%, 29%, 1);
+
+background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
 }
 
 /* ----------------------------------------------
@@ -207,8 +234,7 @@ background-image: url(wrappingPaper1.jpeg);
   0% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
-            
-  
+            color:transparent;
   }
   100% {
     -webkit-transform: rotateX(360deg);
@@ -217,13 +243,15 @@ background-image: url(wrappingPaper1.jpeg);
             color:black;
             background-image: background: hsla(256, 25%, 29%, 1);
 
-background: linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: hsla(9, 85%, 32%, 1);
 
-background: -moz-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
 
-background: -webkit-linear-gradient(270deg, hsla(256, 25%, 29%, 1) 0%, hsla(320, 29%, 52%, 1) 16%, hsla(47, 90%, 84%, 1) 63%, hsla(190, 53%, 56%, 1) 89%);
+background: -moz-linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42385E", endColorstr="#A86090", GradientType=1 );
+background: -webkit-linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#96200C", endColorstr="#B87327", GradientType=1 );
             
         
   }
