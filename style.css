@@ -28,9 +28,7 @@
 body {
   font-family: "Delius";
 }
-.iacs {
-  color: rgb(251,235,175);
-}
+
 h1 {
   color: rgb(251,235,175);
   line-height: 0.8em;
@@ -44,6 +42,7 @@ h1 {
 }
 
 h2 {
+  color:#a86090;
   margin-top: -20px;
   font-family: "Delius";
    text-shadow: 
@@ -73,7 +72,7 @@ h2::after {
   padding:5px;
   content: "Scroll To Start!";
   text-align: center;
-  color: #a86090;
+  color: #4e6aab;
   border-top: 4px solid #4e617c;
   border-bottom: 4px solid red;
   line-height: 0.9;
