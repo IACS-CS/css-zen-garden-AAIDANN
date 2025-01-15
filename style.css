@@ -211,14 +211,12 @@ background-image: url(wrappingPaper1.jpeg);
   color:green;
   border-radius:10px;
   line-height:2;
+  
  }
 
 .select, .archives, .resources, .sidebar{
   margin-top:15px;
-  display:flex;
   display:inline-block;
-  justify-content:space-evenly;
-  flex-direction:row;
   text-align: center;
   border: 2px solid black;
   padding:20px;
